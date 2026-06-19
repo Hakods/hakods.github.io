@@ -6,6 +6,23 @@
 <title>Ahmet Hakan Altıparmak — iOS Developer</title>
 <meta name="description" content="iOS developer shipping apps that reach the top of the App Store. Creator of Toyzie AI — 100K+ downloads, Top 30 US App Store." />
 
+<!-- Open Graph / link preview -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://hakods.github.io/" />
+<meta property="og:title" content="Ahmet Hakan Altıparmak — iOS Developer" />
+<meta property="og:description" content="iOS developer shipping apps that reach the top of the App Store. Creator of Toyzie AI — 100K+ downloads, Top 30 US App Store Reference." />
+<meta property="og:image" content="https://hakods.github.io/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Ahmet Hakan Altıparmak — iOS Developer" />
+<meta name="twitter:description" content="Creator of Toyzie AI — 100K+ downloads, Top 30 US App Store. Six production iOS apps shipped." />
+<meta name="twitter:image" content="https://hakods.github.io/og-image.png" />
+<meta name="theme-color" content="#0066FF" />
+
+<!-- Favicon (inline SVG, no extra file needed) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%230066FF'/%3E%3Cstop offset='1' stop-color='%2300C2FF'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='24' fill='url(%23g)'/%3E%3Ctext x='50' y='71' font-family='Arial,sans-serif' font-size='62' font-weight='800' fill='white' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E" />
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -433,6 +450,37 @@
   </div>
 </section>
 
+<!-- CASE STUDY -->
+<section class="block" id="case-study">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="sec-eye">Case Study</span>
+      <h2 class="sec-title">Inside Toyzie AI.</h2>
+      <p class="sec-desc">How a camera-first scanning app reached 100K+ downloads and the Top 30 of the US App Store's Reference category.</p>
+    </div>
+    <div class="work-grid">
+      <article class="work-card reveal">
+        <div class="wc-icon" style="background:linear-gradient(145deg,#0066FF,#00C2FF)"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><circle cx="12" cy="12" r="3"/></svg></div>
+        <span class="wc-tag">THE CHALLENGE</span>
+        <h3 class="wc-title">Identify anything, instantly</h3>
+        <p class="wc-desc">Collectors needed to point their camera at a toy and instantly know what it is, how rare it is, and what it's worth — without typing model numbers or digging through forums. That demanded fast, reliable on-device capture feeding an AI recognition layer.</p>
+      </article>
+      <article class="work-card reveal" style="transition-delay:.06s">
+        <div class="wc-icon" style="background:linear-gradient(145deg,#0066FF,#00C2FF)"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 9l-3 3 3 3"/><path d="M16 9l3 3-3 3"/><path d="M13.5 7.5l-3 9"/></svg></div>
+        <span class="wc-tag">WHAT I BUILT</span>
+        <h3 class="wc-title">Camera-to-value pipeline</h3>
+        <p class="wc-desc">I built the real-time AVFoundation capture flow and a SwiftUI interface in an MVVM architecture, wired to a Cloudflare Workers backend handling recognition and live market-value lookups — and owned the full App Store Connect → TestFlight → release cycle.</p>
+      </article>
+      <article class="work-card reveal" style="transition-delay:.12s">
+        <div class="wc-icon" style="background:linear-gradient(145deg,#0066FF,#00C2FF)"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V12"/><path d="M10 20V8"/><path d="M16 20V14"/><path d="M22 20V4"/></svg></div>
+        <span class="wc-tag">THE IMPACT</span>
+        <h3 class="wc-title">100K+ downloads, Top 30</h3>
+        <p class="wc-desc">Toyzie crossed 100,000 downloads in the US, climbed into the Top 30 of the App Store's Reference category, and holds 4.6★ across 2.1K ratings — and the same scan-value-track engine went on to power CD Scanner and QuitJunk AI.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
 <!-- STACK -->
 <section class="block" id="stack" style="background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
   <div class="wrap">
@@ -444,7 +492,7 @@
       <div class="stack-col">
         <div class="sc-label">Language &amp; UI</div>
         <div class="sc-items">
-          <span class="sc-item">Swift</span><span class="sc-item">SwiftUI</span><span class="sc-item">UIKit</span><span class="sc-item">AVFoundation</span>
+          <span class="sc-item">Swift</span><span class="sc-item">SwiftUI</span><span class="sc-item">UIKit</span><span class="sc-item">AVFoundation</span><span class="sc-item">Combine</span><span class="sc-item">async/await</span>
         </div>
       </div>
       <div class="stack-col">
@@ -456,13 +504,13 @@
       <div class="stack-col">
         <div class="sc-label">Backend &amp; Cloud</div>
         <div class="sc-items">
-          <span class="sc-item">Firebase</span><span class="sc-item">REST APIs</span><span class="sc-item">Cloudflare Workers</span><span class="sc-item">AWS</span>
+          <span class="sc-item">Firebase</span><span class="sc-item">REST APIs</span><span class="sc-item">Alamofire</span><span class="sc-item">Cloudflare Workers</span><span class="sc-item">AWS</span>
         </div>
       </div>
       <div class="stack-col">
         <div class="sc-label">Release &amp; Tooling</div>
         <div class="sc-items">
-          <span class="sc-item">App Store Connect</span><span class="sc-item">TestFlight</span><span class="sc-item">Xcode</span><span class="sc-item">Git</span>
+          <span class="sc-item">App Store Connect</span><span class="sc-item">TestFlight</span><span class="sc-item">Xcode</span><span class="sc-item">Git</span><span class="sc-item">SPM</span><span class="sc-item">Unit Testing</span><span class="sc-item">CI/CD</span>
         </div>
       </div>
       <div class="stack-col">
@@ -474,7 +522,7 @@
       <div class="stack-col">
         <div class="sc-label">Foundations</div>
         <div class="sc-items">
-          <span class="sc-item">Computer Engineering</span><span class="sc-item">REST</span><span class="sc-item">Concurrency</span>
+          <span class="sc-item">Computer Engineering</span><span class="sc-item">Agile / Scrum</span><span class="sc-item">Jira</span><span class="sc-item">Bitbucket</span>
         </div>
       </div>
     </div>
